@@ -1,0 +1,35 @@
+/* ===== Khung cho toàn bộ phần thơ ===== */
+.thokho {
+    max-width: 300px;         /* chiều rộng tối đa */
+    margin: 20px auto;        /* canh giữa khung */
+    background: #f5deb3;      /* màu da (wheat) */
+    padding: 25px;
+    border: 2px solid #a67c52;/* viền khung */
+    border-radius: 8px;
+}
+
+/* Định dạng chung cho các đoạn thơ */
+.thokho p {
+    text-align: center;
+    margin: 0 0 30px 0;        /* khoảng cách dưới mỗi đoạn */
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+/* Gạch chân kết thúc mỗi đoạn */
+.thokho .dau1,
+.thokho .dau2,
+.thokho .dau3 {
+    border-bottom: 1px solid #000;  /* đường gạch chân */
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+/* Áp dụng nền màu da cho cả khối thơ */
+.dau1, .dau2 ,.dau3{
+    background-color: #f5deb3;   /* màu da (wheat/beige) */
+    padding: 15px;               /* khoảng cách bên trong */
+    margin-bottom: 0px;         /* khoảng cách giữa các đoạn */
+    border-radius: 8px;          /* bo góc nhẹ */
+}
+
+

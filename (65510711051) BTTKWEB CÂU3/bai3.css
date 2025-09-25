@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.section {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+ol {
+    margin-left: 40px;
+}
+
+ol li ol li {
+    color: blue;
+    font-weight: normal;
+}
+
+.contact {
+    color: blue;
+    font-style: italic;
+    margin-top: 20px;
+}
