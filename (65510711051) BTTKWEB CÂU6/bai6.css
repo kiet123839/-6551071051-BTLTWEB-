@@ -1,0 +1,80 @@
+/* Reset nhẹ */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background: #fff; color: #222; line-height: 1.45; }
+
+/* Container dùng chung */
+.container { max-width: 1000px; margin: 16px auto; padding: 0 10px; }
+
+/* Thanh trên */
+.top-bar { background: #d60000; color: #fff; padding: 5px 0; border-radius: 4px; }
+.top-bar .container { display:flex; justify-content:center; align-items:center; }
+.tech { font-weight: 600; }
+
+/* Tiêu đề chính */
+.poster { border: 2px solid #d60000; padding: 10px; border-radius: 6px; background: #fff0f0; }
+.title {
+  text-align: center;
+  background: #ffd7d7;
+  padding: 18px 12px;
+  margin-bottom: 12px;
+  color: #c41b1b;
+  font-size: 34px;
+  font-weight: 700;
+  border: 1px solid rgba(196,0,0,0.2);
+  border-radius: 4px;
+}
+.title span { letter-spacing: 1px; }
+
+/* Bố cục nội dung: hình + 2 cột */
+.content { display: grid; grid-template-columns: 140px 1fr 1fr; gap: 12px; align-items: start; }
+
+/* Hình ảnh bên phải trên */
+.promo-image img {
+  width: 120px;
+  height: auto;
+  display: block;
+  margin: 6px auto 0;
+  border-radius: 4px;
+  border: 2px solid #f7caca;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+}
+
+/* Box bên trái & phải */
+.box {
+  background: #fff;
+  border: 2px solid #dcdcdc;
+  padding: 12px;
+  min-height: 220px;
+}
+.left { grid-column: 2 / 3; }
+.right { grid-column: 3 / 4; }
+
+.box h2 {
+  color: #c62828;
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+.box ul, .box ol {
+  margin-left: 18px;
+  margin-bottom: 8px;
+}
+.box li { margin-bottom: 8px; }
+
+/* Footer */
+.footer { text-align: center; margin-top: 12px; color: #666; }
+
+/* Responsive: chuyển sang 1 cột trên điện thoại */
+@media (max-width: 720px) {
+  .content { grid-template-columns: 1fr; }
+  .promo-image { order: -1; text-align: center; }
+  .promo-image img { width: 160px; margin: 0 auto 10px; }
+  .left, .right { min-height: auto; }
+  .title { font-size: 24px; padding: 12px; }
+}
+.page-border {
+  border: 2px solid red;
+  margin: 0 auto;          /* canh giữa nếu cần */
+  padding: 16px;
+  max-width: 1200px;       /* tùy chiều rộng mong muốn */
+  box-sizing: border-box;
+}
